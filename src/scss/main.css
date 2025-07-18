@@ -116,4 +116,77 @@ body {
     padding-top: 17px;
     padding-bottom: 17px;
   }
+}
+
+.best {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 732px) {
+  .best {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.best__title {
+  color: #0A224A;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+@media screen and (min-width: 732px) {
+  .best__title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+.best__item {
+  margin-bottom: 30px;
+}
+.best__img {
+  height: 193px;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 732px) {
+  .best__img {
+    height: 489px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .best__img {
+    width: 536px;
+  }
+}
+.best__name {
+  color: #0A224A;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 732px) {
+  .best__name {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.best__price {
+  color: #0A224A;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+@media screen and (min-width: 732px) {
+  .best__price {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }/*# sourceMappingURL=main.css.map */
