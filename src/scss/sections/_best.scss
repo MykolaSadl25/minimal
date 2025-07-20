@@ -1,0 +1,72 @@
+.best {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @media screen and (min-width: 732px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__title {
+        color: #0A224A;
+        font-family: 'Roboto';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+
+        @media screen and (min-width: 732px) {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__img {
+
+        height: 193px;
+        margin-bottom: 14px;
+
+        @media screen and (min-width: 732px) {
+            height: 489px;
+        }
+
+        @media screen and (min-width: 1344px) {
+            width: 536px;
+        }
+    }
+
+    &__name {
+        color: #0A224A;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 732px) {
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+
+    &__price {
+        color: #0A224A;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+
+        @media screen and (min-width: 732px) {
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}
