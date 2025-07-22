@@ -319,4 +319,131 @@ body {
     font-size: 18px;
     line-height: 27px;
   }
+}
+
+.reviews {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: #F7FAFF;
+}
+@media screen and (min-width: 1344px) {
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.reviews__title {
+  color: #0A224A;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 732px) {
+  .reviews__title {
+    font-size: 32px;
+  }
+}
+.reviews__list {
+  display: flex;
+  gap: 16px;
+}
+@media screen and (min-width: 732px) {
+  .reviews__list {
+    gap: 24px;
+  }
+}
+.reviews__item {
+  border-radius: 8px;
+  background-color: #FFF;
+  padding: 24px 23px 24px 24px;
+}
+.reviews__item:nth-child(2) {
+  display: none;
+}
+.reviews__item:nth-child(3) {
+  display: none;
+}
+@media screen and (min-width: 732px) {
+  .reviews__item {
+    padding: 29px 24px 24px 24px;
+  }
+  .reviews__item:nth-child(2) {
+    display: block;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .reviews__item {
+    padding: 37px 32px 32px 32px;
+  }
+  .reviews__item:nth-child(3) {
+    display: block;
+  }
+}
+.reviews__box {
+  display: flex;
+  align-items: center;
+}
+.reviews__image {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (min-width: 732px) {
+  .reviews__image {
+    width: 56px;
+    height: 56px;
+  }
+}
+.reviews__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+.reviews__heading {
+  color: #0A224A;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.77; /* 177.778% */
+  text-transform: uppercase;
+}
+@media screen and (min-width: 732px) {
+  .reviews__heading {
+    font-size: 20px;
+    line-height: 2.25;
+  }
+}
+.reviews__sub {
+  color: #7A7A7A;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28; /* 128.571% */
+}
+@media screen and (min-width: 732px) {
+  .reviews__sub {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.reviews__text {
+  color: #0A224A;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin-top: 24px;
+}
+@media screen and (min-width: 732px) {
+  .reviews__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }/*# sourceMappingURL=main.css.map */
