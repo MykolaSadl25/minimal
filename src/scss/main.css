@@ -59,12 +59,35 @@ body {
 .hero {
   padding-top: 140px;
   padding-bottom: 313px;
-  background-image: url(/src/img/);
+  background-image: url(../img/mobile/hero-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-@media screen and (min-width: 720px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/mobile/hero-mobile@2x.webp);
+  }
+}
+@media screen and (min-width: 732px) {
   .hero {
     padding-top: 64px;
     padding-bottom: 100px;
+    background-image: url(../img/tablet/hero-tablet1@1x.webp);
+  }
+}
+@media screen and (min-width: 732px) and (min-device-pixel-ratio: 2), screen and (min-width: 732px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 732px) and (min-resolution: 192dpi), screen and (min-width: 732px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/tablet/hero-tablet1@2x.webp);
+  }
+}
+@media screen and (min-width: 1344px) {
+  .hero {
+    background-image: url(../img/desktop/hero-desktop1@1x.webp);
+  }
+}
+@media screen and (min-width: 1344px) and (min-device-pixel-ratio: 2), screen and (min-width: 1344px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1344px) and (min-resolution: 192dpi), screen and (min-width: 1344px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/desktop/hero-desktop1@2x.webp);
   }
 }
 .hero__title {
@@ -75,11 +98,15 @@ body {
   font-weight: 400;
   line-height: 42px;
   text-transform: uppercase;
+  margin-bottom: 14px;
+  margin-right: 65px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 732px) {
   .hero__title {
     font-size: 50px;
+    margin-right: 59px;
     line-height: 75px;
+    margin-bottom: 410px;
   }
 }
 .hero__text {
@@ -89,11 +116,14 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 28px;
+  margin-right: 16px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 732px) {
   .hero__text {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 30px;
   }
 }
 .hero__btn {
@@ -110,7 +140,7 @@ body {
   padding-right: 65px;
   padding-left: 65px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 732px) {
   .hero__btn {
     font-size: 18px;
     padding-top: 17px;
