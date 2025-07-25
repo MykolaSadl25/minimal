@@ -37,17 +37,17 @@ body {
   margin-right: auto;
   outline: 1px solid blue;
   max-width: 1200px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 @media screen and (min-width: 367px) {
   .container {
     width: 367px;
   }
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .container {
-    width: 732px;
+    width: 727px;
   }
 }
 @media screen and (min-width: 1344px) {
@@ -63,7 +63,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/mobile/hero-mobile@2x.webp);
   }
@@ -75,7 +75,7 @@ body {
     background-image: url(../img/tablet/hero-tablet1@1x.webp);
   }
 }
-@media screen and (min-width: 732px) and (min-device-pixel-ratio: 2), screen and (min-width: 732px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 732px) and (min-resolution: 192dpi), screen and (min-width: 732px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 732px) and (min-device-pixel-ratio: 2), screen and (min-width: 732px) and (min-resolution: 192dpi), screen and (min-width: 732px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/tablet/hero-tablet1@2x.webp);
   }
@@ -85,7 +85,7 @@ body {
     background-image: url(../img/desktop/hero-desktop1@1x.webp);
   }
 }
-@media screen and (min-width: 1344px) and (min-device-pixel-ratio: 2), screen and (min-width: 1344px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1344px) and (min-resolution: 192dpi), screen and (min-width: 1344px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1344px) and (min-device-pixel-ratio: 2), screen and (min-width: 1344px) and (min-resolution: 192dpi), screen and (min-width: 1344px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/desktop/hero-desktop1@2x.webp);
   }
@@ -151,7 +151,7 @@ body {
 .about {
   padding-top: 64px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .about__wrapping {
     display: flex;
     flex-direction: row;
@@ -180,7 +180,7 @@ body {
   height: 1px;
   background-color: #0A224A;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .about__desc {
     padding-top: 36px;
   }
@@ -200,7 +200,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .about__title {
     font-size: 32px;
   }
@@ -221,7 +221,7 @@ body {
   width: auto;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .about__text {
     font-size: 18px;
   }
@@ -239,7 +239,7 @@ body {
   gap: 30px;
   margin-bottom: 64px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .about__list {
     flex-direction: row;
     margin-bottom: 30px;
@@ -268,7 +268,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .about__subtitle {
     font-size: 18px;
   }
@@ -373,7 +373,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .reviews__title {
     font-size: 32px;
   }
@@ -382,7 +382,7 @@ body {
   display: flex;
   gap: 16px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .reviews__list {
     gap: 24px;
   }
@@ -398,7 +398,7 @@ body {
 .reviews__item:nth-child(3) {
   display: none;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .reviews__item {
     padding: 29px 24px 24px 24px;
   }
@@ -422,7 +422,7 @@ body {
   width: 48px;
   height: 48px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .reviews__image {
     width: 56px;
     height: 56px;
@@ -442,7 +442,7 @@ body {
   line-height: 1.77; /* 177.778% */
   text-transform: uppercase;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .reviews__heading {
     font-size: 20px;
     line-height: 2.25;
@@ -456,7 +456,7 @@ body {
   font-weight: 400;
   line-height: 1.28; /* 128.571% */
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .reviews__sub {
     font-size: 16px;
     line-height: 1.5;
@@ -471,9 +471,202 @@ body {
   line-height: 20px; /* 142.857% */
   margin-top: 24px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 727px) {
   .reviews__text {
     font-size: 18px;
     line-height: 1.5;
+  }
+}
+
+.footer {
+  padding-top: 36px;
+  padding-bottom: 16px;
+  background-color: #0A224A;
+}
+@media screen and (min-width: 727px) {
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+}
+.footer__icon {
+  width: 100px;
+  height: 16px;
+  fill: White;
+}
+@media screen and (min-width: 727px) {
+  .footer__icon {
+    width: 127.583px;
+    height: 16.981px;
+  }
+}
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.footer__wrapping {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 35px;
+}
+.footer__address {
+  color: White;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.37;
+  letter-spacing: 0.16px;
+}
+@media screen and (min-width: 727px) {
+  .footer__address {
+    font-size: 19px;
+    line-height: 1.15;
+  }
+}
+.footer__time {
+  color: White;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.37;
+  letter-spacing: 0.16px;
+}
+@media screen and (min-width: 727px) {
+  .footer__time {
+    font-size: 19px;
+    line-height: 1.15;
+  }
+}
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+.footer__link {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+@media screen and (min-width: 727px) {
+  .footer__link {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+.footer__elems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 64px;
+}
+.footer__itm:nth-child(3) {
+  display: none;
+}
+.footer__contact {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.16px;
+}
+@media screen and (min-width: 727px) {
+  .footer__contact {
+    font-size: 19px;
+    line-height: 1.15;
+  }
+}
+.footer__social {
+  display: flex;
+  gap: 16px;
+}
+@media screen and (min-width: 1344px) {
+  .footer__social {
+    gap: 30px;
+  }
+}
+.footer__icons {
+  width: 28px;
+  height: 28px;
+  fill: White;
+}
+@media screen and (min-width: 727px) {
+  .footer__icons {
+    width: 40px;
+    height: 40px;
+  }
+}
+.footer__text {
+  color: #7A7A7A;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.16; /* 116.667% */
+  letter-spacing: 1.188px;
+}
+@media screen and (min-width: 727px) {
+  .footer__text {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+}
+.footer__terms {
+  color: #7A7A7A;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 1.188px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+@media screen and (min-width: 727px) {
+  .footer__terms {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+}
+.footer__policy {
+  color: #7A7A7A;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 1.188px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+@media screen and (min-width: 727px) {
+  .footer__policy {
+    font-size: 14px;
+    line-height: 1.25;
   }
 }/*# sourceMappingURL=main.css.map */
