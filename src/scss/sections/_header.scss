@@ -1,0 +1,65 @@
+
+.header {
+  background-color: #f7faff;
+  &__nav {
+    padding: 36px 0px;
+    display: flex;
+    @media screen and (min-width: 727px) {
+      padding-bottom: 27px;
+      padding-top: 28px;
+    }
+    @media screen and (min-width: 1344px) {
+      padding: 26px 0px;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  &__icon {
+    width: 127px;
+    height: 16px;
+  }
+  &__button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1344px) {
+      display: none;
+    }
+  }
+  &__menu {
+    width: 40px;
+    height: 40px;
+    fill: red;
+    position: absolute;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 425px;
+    margin-right: auto;
+  }
+  &__link {
+    color: #0a224a;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+  }
+  &__box {
+    display: none;
+    @media screen and (min-width: 1344px) {
+      display: block;
+    }
+  }
+}
