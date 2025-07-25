@@ -17,43 +17,46 @@
 
     <!-- Loads the specified .html file -->
     <header class="header">
-   <div class="container">
+  <div class="container">
     <nav class="header__nav">
-        <button class="header__btn">
-          <svg class="header__icon">
-            <use href="/minimal/assets/symbol-defs-9c133c9d.svg#icon-logo"></use>
-          </svg>
-        </button>
-        <div class="header__box">
-      <ul class="header__list">
-      <li class="header__item">
-        <a href="#" class="header__link">About us</a>
-    </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Our products</a>
-    </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Prices</a>
-    </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Bestsellers</a>
-    </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Reviews</a>
-    </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Contacts</a>
-    </li>
-      </ul>
-</div>
-        <button class="header__button" type="button">
-          <svg class="header__menu">
-            <use href="/minimal/assets/symbol-defs-9c133c9d.svg#icon-burger"></use>
-          </svg>
-        </button>
+      <button class="header__btn">
+        <svg class="header__icon">
+          <use href="/minimal/assets/symbol-defs-9c133c9d.svg#icon-logo"></use>
+        </svg>
+      </button>
+      <div class="header__box">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">About us</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Our products</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Prices</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Bestsellers</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Reviews</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <button class="header__button" type="button">
+        <svg class="header__menu">
+          <use
+            href="/src/img/symbol-defs.svg#icon-burger"
+            data-mobile-open
+          ></use>
+        </svg>
+      </button>
     </nav>
-   </div>
-   </header>
+  </div>
+</header>
 
     <section class="hero">
     <div class="container">
@@ -333,26 +336,21 @@
 </footer>
 
     
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <ul class="mobile__list">
-            <li class="mobile__item"><a href="" class="mobile__link">About us</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">Our products</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">Prices</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">Bestsellers</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">Reviews</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">Contacts</a></li>
-        </ul>
-    </div>
-</body>
-</html>
+    <div class="mobile is-hidden" data-mobile>
+    <button type="button" class="mobile__close" data-mobile-close>
+      <svg class="mobile__icon">
+        <use href="/src/img/symbol-defs.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <ul class="mobile__list">
+        <li class="mobile__item"><a href="" class="mobile__link">About us</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">Our products</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">Prices</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">Bestsellers</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">Reviews</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">Contacts</a></li>
+    </ul>
+  </div>
 
     
   </body>
