@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto";
   background-color: #FFF;
 }
 
@@ -579,15 +579,33 @@ body {
   justify-content: space-between;
   margin-bottom: 36px;
 }
+@media screen and (min-width: 727px) {
+  .footer__wrap {
+    margin-bottom: 32px;
+  }
+}
 .footer__wrapping {
   display: flex;
   flex-direction: column-reverse;
+}
+@media screen and (min-width: 727px) {
+  .footer__wrapping {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
 }
 .footer__list {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 35px;
+}
+@media screen and (min-width: 727px) {
+  .footer__list {
+    margin-bottom: 0;
+    margin-right: 128px;
+    gap: 24px;
+  }
 }
 .footer__address {
   color: White;
@@ -625,6 +643,11 @@ body {
   gap: 8px;
   margin-bottom: 36px;
 }
+@media screen and (min-width: 727px) {
+  .footer__items {
+    margin-bottom: 0;
+  }
+}
 .footer__link {
   color: #FFF;
   font-family: Roboto;
@@ -645,8 +668,18 @@ body {
   gap: 8px;
   margin-bottom: 64px;
 }
+@media screen and (min-width: 727px) {
+  .footer__elems {
+    gap: 24px;
+  }
+}
 .footer__itm:nth-child(3) {
   display: none;
+}
+@media screen and (min-width: 727px) {
+  .footer__itm:nth-child(3) {
+    display: block;
+  }
 }
 .footer__contact {
   color: #FFF;
