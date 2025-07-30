@@ -4,45 +4,60 @@
   background-image: url(../img/mobile/hero-mobile@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: 367px 100%;
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image:
       url(../img/mobile/hero-mobile@2x.webp);
-  }
 
-  @media screen and (min-width: 727px) {
-    padding-top: 64px;
-    padding-bottom: 100px;
-    background-image: url(../img/tablet/hero-tablet1@1x.webp), url(../img/tablet/hero-tablet2@1x.webp);
-    background-position: 16% 50.7%, 82% 21%;
-    background-size: 308px 330px, 364px 531px;
+    @media screen and (min-width:727px) {
+      background-image: none;
+    }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../img/tablet/hero-tablet1@2x.webp), url(../img/tablet/hero-tablet2@2x.webp);
+    @media screen and (min-width: 1344px) {
+      background-image: none;
     }
   }
 
-  @media screen and (min-width: 1344px) {
-    background-image: url(../img/desktop/hero-desktop1@1x.webp),
-      url(../img/desktop/hero-desktop2@1x.webp),
-      url(../img/desktop/hero-desktop3@1x.webp);
-    background-position: 6% 73.5%, 47% 39%, 93% 18%;
-    background-size: auto 329px, auto 539px, auto 337px;
+  &>.container {
+    @media screen and (min-width:367px) {
+      background-image: none;
+    }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image:
-        url(../img/desktop/hero-desktop1@2x.webp),
-        url(../img/desktop/hero-desktop2@2x.webp),
-        url(../img/desktop/hero-desktop3@2x.webp);
+    @media screen and (min-width: 727px) {
+      padding-top: 64px;
+      padding-bottom: 100px;
+      background-image: url(../img/tablet/hero-tablet1@1x.webp), url(../img/tablet/hero-tablet2@1x.webp);
+      background-position: 6% 50.7%, 97% 21%;
+      background-size: 308px 330px, 364px 531px;
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../img/tablet/hero-tablet1@2x.webp), url(../img/tablet/hero-tablet2@2x.webp);
+      }
+    }
+
+    @media screen and (min-width: 1344px) {
+      background-image: url(../img/desktop/hero-desktop1@1x.webp),
+        url(../img/desktop/hero-desktop2@1x.webp),
+        url(../img/desktop/hero-desktop3@1x.webp);
+      background-position: 2% 73.5%, 51% 39%, 99.9% 18%;
+      background-size: auto 329px, auto 539px, auto 337px;
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image:
+          url(../img/desktop/hero-desktop1@2x.webp),
+          url(../img/desktop/hero-desktop2@2x.webp),
+          url(../img/desktop/hero-desktop3@2x.webp);
+      }
     }
   }
+
+
 
   &__title {
     color: #0A224A;
@@ -86,7 +101,7 @@
     }
 
     @media screen and (min-width: 1344px) {
-      margin-left: 880px;
+      margin-left: 1011px;
     }
   }
 
@@ -111,7 +126,7 @@
     }
 
     @media screen and (min-width: 1344px) {
-      margin-left: 880px;
+      margin-left: 1011px;
     }
   }
 }

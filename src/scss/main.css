@@ -141,29 +141,44 @@ body {
     background-image: url(../img/mobile/hero-mobile@2x.webp);
   }
 }
-@media screen and (min-width: 727px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 727px), screen and (min-resolution: 192dpi) and (min-width: 727px), screen and (min-resolution: 2dppx) and (min-width: 727px) {
   .hero {
+    background-image: none;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1344px), screen and (min-resolution: 192dpi) and (min-width: 1344px), screen and (min-resolution: 2dppx) and (min-width: 1344px) {
+  .hero {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 367px) {
+  .hero > .container {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 727px) {
+  .hero > .container {
     padding-top: 64px;
     padding-bottom: 100px;
     background-image: url(../img/tablet/hero-tablet1@1x.webp), url(../img/tablet/hero-tablet2@1x.webp);
-    background-position: 16% 50.7%, 82% 21%;
+    background-position: 6% 50.7%, 97% 21%;
     background-size: 308px 330px, 364px 531px;
   }
 }
 @media screen and (min-width: 727px) and (min-device-pixel-ratio: 2), screen and (min-width: 727px) and (min-resolution: 192dpi), screen and (min-width: 727px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero > .container {
     background-image: url(../img/tablet/hero-tablet1@2x.webp), url(../img/tablet/hero-tablet2@2x.webp);
   }
 }
 @media screen and (min-width: 1344px) {
-  .hero {
+  .hero > .container {
     background-image: url(../img/desktop/hero-desktop1@1x.webp), url(../img/desktop/hero-desktop2@1x.webp), url(../img/desktop/hero-desktop3@1x.webp);
-    background-position: 6% 73.5%, 47% 39%, 93% 18%;
+    background-position: 2% 73.5%, 51% 39%, 99.9% 18%;
     background-size: auto 329px, auto 539px, auto 337px;
   }
 }
 @media screen and (min-width: 1344px) and (min-device-pixel-ratio: 2), screen and (min-width: 1344px) and (min-resolution: 192dpi), screen and (min-width: 1344px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero > .container {
     background-image: url(../img/desktop/hero-desktop1@2x.webp), url(../img/desktop/hero-desktop2@2x.webp), url(../img/desktop/hero-desktop3@2x.webp);
   }
 }
@@ -212,7 +227,7 @@ body {
 }
 @media screen and (min-width: 1344px) {
   .hero__text {
-    margin-left: 880px;
+    margin-left: 1011px;
   }
 }
 .hero__btn {
@@ -238,7 +253,7 @@ body {
 }
 @media screen and (min-width: 1344px) {
   .hero__btn {
-    margin-left: 880px;
+    margin-left: 1011px;
   }
 }
 
