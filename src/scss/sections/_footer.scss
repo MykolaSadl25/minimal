@@ -14,6 +14,7 @@ fill: $footer-logo-color;
 @media screen and  (min-width:727px) {
         width: 127.583px;
 height: 16.981px;
+margin-right: 241px;
     }
 
     }
@@ -25,10 +26,52 @@ height: 16.981px;
         margin-bottom: 36px;
         @media screen and  (min-width:727px) {
         margin-bottom: 32px;
+        justify-content: flex-start;
+    }
+    @media screen and  (min-width:1344px) {
+        margin-bottom: 39px;
     }
     }
 
+    &__items2 {
+  display: none;
+  @media screen and  (min-width:727px) {
+        display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+    }
+}
+
+&__menu {
+    display: none;
+
+    @media screen and (min-width: 727px) {
+        display: flex;
+    flex-direction: column;
+      gap: 16px;
+      margin-bottom: 0;
+      
+    }
+  }
+
+  &__wraps{
+    @media screen and  (min-width:727px) {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+  }
+
     &__wrapping{
+        display: flex;
+        flex-direction: column-reverse;
+        @media screen and  (min-width:727px) {
+        flex-direction: row;
+        margin-bottom: 0;
+        display: none;
+    }
+    }
+    &__wrapping2{
         display: flex;
         flex-direction: column-reverse;
         @media screen and  (min-width:727px) {
@@ -84,7 +127,11 @@ letter-spacing: 0.16px;
         margin-bottom: 36px;
         @media screen and  (min-width:727px) {
         margin-bottom: 0;
-        
+        display: none;
+    }
+    @media screen and  (min-width:1344px) {
+       gap: 30px;
+        flex-direction: row;
     }
     }
 
@@ -108,6 +155,10 @@ line-height: 1.50; /* 150% */
         margin-bottom: 64px;
         @media screen and  (min-width:727px) {
         gap: 24px;
+    }
+    @media screen and  (min-width:1344px) {
+       gap: 30px;
+        flex-direction: row;
     }
     }
 
@@ -137,6 +188,9 @@ letter-spacing: 0.16px;
     &__social{
         display: flex;
         gap: 16px;
+        @media screen and  (min-width:727px) {
+        margin-left:64px;
+    }
         @media screen and  (min-width: 1344px) {
         gap: 30px;
     }
