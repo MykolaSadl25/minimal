@@ -2,7 +2,7 @@
     padding-top: 36px;
     padding-bottom: 16px;
     background-color: $footer-bcg-color;
-    @media screen and  (min-width:727px) {
+    @media screen and  (min-width:752px) {
         padding-top: 48px;
         padding-bottom: 36px;
     }
@@ -11,12 +11,14 @@
         width: 100px;
 height: 16px;
 fill: $footer-logo-color;
-@media screen and  (min-width:727px) {
+@media screen and  (min-width:752px) {
         width: 127.583px;
 height: 16.981px;
 margin-right: 241px;
     }
-
+@media screen and  (min-width:1344px) {
+        margin-right: 0;
+    }
     }
 
     &__wrap{
@@ -24,9 +26,8 @@ margin-right: 241px;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 36px;
-        @media screen and  (min-width:727px) {
+        @media screen and  (min-width:752px) {
         margin-bottom: 32px;
-        justify-content: flex-start;
     }
     @media screen and  (min-width:1344px) {
         margin-bottom: 39px;
@@ -35,27 +36,46 @@ margin-right: 241px;
 
     &__items2 {
   display: none;
-  @media screen and  (min-width:727px) {
+  @media screen and  (min-width:752px) {
         display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+ 
+    }
+    @media screen and  (min-width:1344px) {
+        display: flex;
+  flex-direction: row;
+  gap: 30px;
+    }
+}
+
+&__elems{
+    @media screen and  (min-width:752px) {
+        &:nth-child(n+2){
+        display: none;
+        }
+    }
+    @media screen and  (min-width:1344px) {
+        &:nth-child(n+2){
+        display: block;
+        }
     }
 }
 
 &__menu {
     display: none;
 
-    @media screen and (min-width: 727px) {
+    @media screen and (min-width: 752px) {
         display: flex;
     flex-direction: column;
       gap: 16px;
       margin-bottom: 0;
-      
     }
+    @media screen and (min-width: 1344px) {
+        display: none;
   }
-
+}
   &__wraps{
-    @media screen and  (min-width:727px) {
+    @media screen and  (min-width:752px) {
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
@@ -65,18 +85,23 @@ margin-right: 241px;
     &__wrapping{
         display: flex;
         flex-direction: column-reverse;
-        @media screen and  (min-width:727px) {
+        @media screen and  (min-width:752px) {
         flex-direction: row;
         margin-bottom: 0;
         display: none;
     }
     }
     &__wrapping2{
-        display: flex;
-        flex-direction: column-reverse;
-        @media screen and  (min-width:727px) {
+        display: none;
+        @media screen and  (min-width:752px) {
+            display: flex;
         flex-direction: row;
         margin-bottom: 0;
+    }
+    @media screen and  (min-width:1344px) {
+            display: flex;
+        flex-direction: row;
+        margin-bottom: 35px;
     }
     }
 
@@ -85,9 +110,9 @@ margin-right: 241px;
         flex-direction: column;
         gap: 8px;
         margin-bottom: 35px;
-        @media screen and  (min-width:727px) {
+        @media screen and  (min-width:752px) {
         margin-bottom: 0;
-        margin-right: 128px;
+        margin-right: 90px;
         gap: 24px;
     }
     }
@@ -100,7 +125,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.37;
 letter-spacing: 0.16px;
-@media screen and  (min-width:727px) {
+@media screen and  (min-width:752px) {
         font-size: 19px;
         line-height: 1.15;
     }
@@ -114,7 +139,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.37;
 letter-spacing: 0.16px;
-@media screen and  (min-width:727px) {
+@media screen and  (min-width:752px) {
         font-size: 19px;
         line-height: 1.15;
     }
@@ -125,7 +150,7 @@ letter-spacing: 0.16px;
         flex-direction: column;
         gap: 8px;
         margin-bottom: 36px;
-        @media screen and  (min-width:727px) {
+        @media screen and  (min-width:752px) {
         margin-bottom: 0;
         display: none;
     }
@@ -142,30 +167,47 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 1.50; /* 150% */
-@media screen and  (min-width:727px) {
+@media screen and  (min-width:752px) {
         font-size: 18px;
         line-height: 1.50;
     }
     }
 
-    &__elems{
+    &__lists{
         display: flex;
         flex-direction: column;
         gap: 8px;
         margin-bottom: 64px;
-        @media screen and  (min-width:727px) {
+        @media screen and  (min-width:752px) {
         gap: 24px;
     }
     @media screen and  (min-width:1344px) {
+       display: none;
+    }
+    }
+
+    &__lists2{
+        display: none;
+        @media screen and  (min-width:1344px) {
+            display: flex;
        gap: 30px;
         flex-direction: row;
+        &>.footer__itm:nth-child(n+1){
+            display: flex;
+            flex-direction: column;
+        }
     }
     }
+
+    // &__column{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 
     &__itm{
         &:nth-child(3){
             display: none;
-            @media screen and  (min-width:727px) {
+            @media screen and  (min-width:752px) {
         display: block;
     }
         }
@@ -188,7 +230,7 @@ letter-spacing: 0.16px;
     &__social{
         display: flex;
         gap: 16px;
-        @media screen and  (min-width:727px) {
+        @media screen and  (min-width:752px) {
         margin-left:64px;
     }
         @media screen and  (min-width: 1344px) {
@@ -200,7 +242,7 @@ letter-spacing: 0.16px;
         width: 28px;
 height: 28px;
 fill: $footer-icon-fill;
-        @media screen and  (min-width:727px) {
+        @media screen and  (min-width:752px) {
         width: 40px;
 height: 40px;
     }
@@ -215,9 +257,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.16; /* 116.667% */
 letter-spacing: 1.188px;
-@media screen and  (min-width:727px) {
+@media screen and  (min-width:752px) {
         font-size: 14px;
         line-height: 1.25;
+        margin-top: 64px;
+    }
+    @media screen and  (min-width:1344px) {
+        font-size: 14px;
+        line-height: 1.25;
+        margin-top: 0;
     }
     }
     &__terms{
@@ -234,7 +282,7 @@ text-decoration-skip-ink: none;
 text-decoration-thickness: auto;
 text-underline-offset: auto;
 text-underline-position: from-font;
-@media screen and  (min-width:727px) {
+@media screen and  (min-width:752px) {
         font-size: 14px;
         line-height: 1.25;
     }
@@ -254,7 +302,7 @@ text-decoration-skip-ink: none;
 text-decoration-thickness: auto;
 text-underline-offset: auto;
 text-underline-position: from-font;
-@media screen and  (min-width:727px) {
+@media screen and  (min-width:752px) {
         font-size: 14px;
         line-height: 1.25;
     }
