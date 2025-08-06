@@ -276,6 +276,7 @@ body {
 }
 .about__box {
   background: #F7FAFF;
+  padding-left: 69px;
 }
 .about__desc {
   color: #0A224A;
@@ -298,12 +299,7 @@ body {
 }
 @media screen and (min-width: 752px) {
   .about__desc {
-    padding-top: 36px;
-  }
-}
-@media screen and (min-width: 1344px) {
-  .about__desc {
-    margin-left: 69px;
+    margin-top: 36px;
   }
 }
 .about__title {
@@ -324,7 +320,6 @@ body {
 @media screen and (min-width: 1344px) {
   .about__title {
     width: 622px;
-    margin-left: 69px;
   }
 }
 .about__text {
@@ -345,7 +340,6 @@ body {
 @media screen and (min-width: 1344px) {
   .about__text {
     width: 622px;
-    margin-left: 69px;
   }
 }
 .about__list {
@@ -1018,6 +1012,7 @@ body {
 @media screen and (min-width: 1344px) {
   .footer__social {
     gap: 30px;
+    margin-left: 0;
   }
 }
 .footer__icons {
