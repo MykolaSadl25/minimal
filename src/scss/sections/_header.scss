@@ -4,7 +4,7 @@
   &__nav {
     padding: 36px 0px;
     display: flex;
-    @media screen and (min-width: 727px) {
+    @media screen and (min-width: 752px) {
       padding-bottom: 27px;
       padding-top: 28px;
     }
@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-left: 425px;
+    margin-left: 566px;
     margin-right: auto;
   }
   &__link {
