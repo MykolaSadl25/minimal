@@ -15,6 +15,7 @@
 
     &__box{
         background:$about-bcg;
+        padding-left: 69px;
     }
 
     &__desc{
@@ -36,11 +37,11 @@ height: 1px;
 background-color:$about-text-color;
 }
 @media screen and  (min-width:752px) {
-        padding-top: 36px;
+        margin-top: 36px;
     }
-    @media screen and  (min-width:1344px) {
-     margin-left: 69px
-    }
+    // @media screen and  (min-width:1344px) {
+    //  margin-left: 69px
+    // }
     }
 
     &__title{
@@ -57,7 +58,7 @@ margin-bottom: 30px;
     }
 @media screen and  (min-width:1344px) {
     width: 622px;
-     margin-left: 69px;
+    //  margin-left: 69px;
     }
     }
 
@@ -75,7 +76,7 @@ margin-bottom: 30px;
     }
 @media screen and  (min-width:1344px) {
      width: 622px;
-     margin-left: 69px;
+    //  margin-left: 69px;
     }
     }
 
