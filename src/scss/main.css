@@ -131,7 +131,7 @@ body {
 
 .hero {
   padding-top: 140px;
-  padding-bottom: 313px;
+  padding-bottom: 100px;
   background-image: url(../img/mobile/hero-mobile@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -141,7 +141,7 @@ body {
     background-image: url(../img/mobile/hero-mobile@2x.webp);
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 727px), screen and (min-resolution: 192dpi) and (min-width: 727px), screen and (min-resolution: 2dppx) and (min-width: 727px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 752px), screen and (min-resolution: 192dpi) and (min-width: 752px), screen and (min-resolution: 2dppx) and (min-width: 752px) {
   .hero {
     background-image: none;
   }
@@ -156,34 +156,36 @@ body {
     background-image: none;
   }
 }
-@media screen and (min-width: 727px) {
+@media screen and (min-width: 752px) {
   .hero > .container {
-    padding-top: 64px;
-    padding-bottom: 100px;
     background-image: url(../img/tablet/hero-tablet1@1x.webp), url(../img/tablet/hero-tablet2@1x.webp);
-    background-position: 6% 50.7%, 97% 21%;
+    background-position: 5% 60%, 94% 14%;
     background-size: 308px 330px, 364px 531px;
+    background-repeat: no-repeat, no-repeat;
   }
 }
-@media screen and (min-width: 727px) and (min-device-pixel-ratio: 2), screen and (min-width: 727px) and (min-resolution: 192dpi), screen and (min-width: 727px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 752px) and (min-device-pixel-ratio: 2), screen and (min-width: 752px) and (min-resolution: 192dpi), screen and (min-width: 752px) and (min-resolution: 2dppx) {
   .hero > .container {
     background-image: url(../img/tablet/hero-tablet1@2x.webp), url(../img/tablet/hero-tablet2@2x.webp);
+    background-repeat: no-repeat, no-repeat;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero > .container {
     background-image: url(../img/desktop/hero-desktop1@1x.webp), url(../img/desktop/hero-desktop2@1x.webp), url(../img/desktop/hero-desktop3@1x.webp);
-    background-position: 2% 73.5%, 51% 39%, 99.9% 18%;
+    background-position: 2.33% 100%, 50% 39%, 97.7% 0%;
     background-size: auto 329px, auto 539px, auto 337px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
   }
 }
 @media screen and (min-width: 1344px) and (min-device-pixel-ratio: 2), screen and (min-width: 1344px) and (min-resolution: 192dpi), screen and (min-width: 1344px) and (min-resolution: 2dppx) {
   .hero > .container {
     background-image: url(../img/desktop/hero-desktop1@2x.webp), url(../img/desktop/hero-desktop2@2x.webp), url(../img/desktop/hero-desktop3@2x.webp);
+    background-repeat: no-repeat, no-repeat, no-repeat;
   }
 }
 .hero__title {
-  color: #0A224A;
+  color: #0a224a;
   font-family: "Playfair Display";
   font-size: 28px;
   font-style: normal;
@@ -193,7 +195,7 @@ body {
   margin-bottom: 14px;
   margin-right: 65px;
 }
-@media screen and (min-width: 727px) {
+@media screen and (min-width: 752px) {
   .hero__title {
     font-size: 50px;
     margin-right: 59px;
@@ -208,7 +210,7 @@ body {
   }
 }
 .hero__text {
-  color: #0A224A;
+  color: #0a224a;
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
@@ -217,7 +219,7 @@ body {
   margin-bottom: 28px;
   margin-right: 16px;
 }
-@media screen and (min-width: 727px) {
+@media screen and (min-width: 752px) {
   .hero__text {
     font-size: 18px;
     line-height: 27px;
@@ -227,24 +229,24 @@ body {
 }
 @media screen and (min-width: 1344px) {
   .hero__text {
-    margin-left: 1011px;
+    margin-left: 990px;
   }
 }
 .hero__btn {
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  background-color: #0A224A;
+  background-color: #0a224a;
   border: none;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 65px;
   padding-left: 65px;
 }
-@media screen and (min-width: 727px) {
+@media screen and (min-width: 752px) {
   .hero__btn {
     font-size: 18px;
     padding-top: 17px;
@@ -253,7 +255,7 @@ body {
 }
 @media screen and (min-width: 1344px) {
   .hero__btn {
-    margin-left: 1011px;
+    margin-left: 990px;
   }
 }
 
@@ -486,18 +488,114 @@ body {
   }
 }
 
+.products {
+  padding-top: 64px;
+}
+@media screen and (min-width: 752px) {
+  .products {
+    padding-top: 100px;
+  }
+}
+.products__title {
+  color: #0a224a;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 33px;
+}
+@media screen and (min-width: 752px) {
+  .products__title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+}
+.products__list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+@media screen and (min-width: 1344px) {
+  .products__list {
+    gap: 24px;
+  }
+}
+.products__item:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 752px) {
+  .products__item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.products__item:nth-child(3) {
+  display: none;
+}
+@media screen and (min-width: 1344px) {
+  .products__item:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.products__item:last-child {
+  display: none;
+}
+@media screen and (min-width: 1344px) {
+  .products__item:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.products__img {
+  width: 343px;
+  height: 300px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 752px) {
+  .products__img {
+    width: 344px;
+    height: 300px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .products__img {
+    width: 312px;
+    height: 300px;
+  }
+}
+.products__text {
+  color: #0A224A;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media screen and (min-width: 752px) {
+  .products__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
 .best {
   padding-top: 64px;
   padding-bottom: 64px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 752px) {
   .best {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 .best__title {
-  color: #0A224A;
+  color: #0a224a;
   font-family: "Roboto";
   font-size: 28px;
   font-style: normal;
@@ -505,32 +603,90 @@ body {
   line-height: 42px;
   text-transform: uppercase;
   margin-bottom: 21px;
+  display: flex;
+  justify-content: center;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 752px) {
   .best__title {
     font-size: 32px;
     line-height: 45px;
   }
 }
+.best__list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
+}
+@media screen and (min-width: 752px) {
+  .best__list {
+    flex-direction: row;
+    flex-basis: calc((100% - 64px) / 2);
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .best__list {
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+}
 .best__item {
   margin-bottom: 30px;
 }
-.best__img {
-  height: 193px;
-  margin-bottom: 14px;
+.best__item:first-child {
+  display: none;
 }
-@media screen and (min-width: 732px) {
-  .best__img {
+@media screen and (min-width: 752px) {
+  .best__item:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.best__item:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 752px) {
+  .best__item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 752px) {
+  .best__item:last-child .best__img {
+    width: 704px;
     height: 489px;
   }
 }
 @media screen and (min-width: 1344px) {
-  .best__img {
+  .best__item:last-child .best__img {
+    margin-right: 24px;
     width: 536px;
+    height: 489px;
+  }
+}
+.best__img {
+  margin-bottom: 14px;
+  width: 343px;
+  height: 193px;
+}
+@media screen and (min-width: 752px) {
+  .best__img {
+    width: 336px;
+    height: 193px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .best__img {
+    width: 258px;
+    height: 193px;
   }
 }
 .best__name {
-  color: #0A224A;
+  color: #0a224a;
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
@@ -538,21 +694,21 @@ body {
   line-height: 24px;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 752px) {
   .best__name {
     font-size: 18px;
     line-height: 27px;
   }
 }
 .best__price {
-  color: #0A224A;
+  color: #0a224a;
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 752px) {
   .best__price {
     font-size: 18px;
     line-height: 27px;
