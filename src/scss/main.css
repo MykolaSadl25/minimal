@@ -175,10 +175,9 @@ body {
   }
 }
 .hero__title {
-  color: #0a224a;
+  color: #0A224A;
   font-family: "Playfair Display";
   font-size: 28px;
-  font-style: normal;
   font-weight: 400;
   line-height: 42px;
   text-transform: uppercase;
@@ -200,10 +199,8 @@ body {
   }
 }
 .hero__text {
-  color: #0a224a;
-  font-family: "Roboto";
+  color: #0A224A;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 28px;
@@ -224,12 +221,10 @@ body {
 }
 .hero__btn {
   color: #fff;
-  font-family: "Roboto";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  background-color: #0a224a;
+  background-color: #0A224A;
   border: none;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -481,10 +476,8 @@ body {
   }
 }
 .products__title {
-  color: #0a224a;
-  font-family: Roboto;
+  color: #0A224A;
   font-size: 28px;
-  font-style: normal;
   font-weight: 400;
   line-height: 42px;
   text-transform: uppercase;
@@ -507,6 +500,10 @@ body {
   .products__list {
     gap: 24px;
   }
+}
+.products__item:first-child {
+  display: flex;
+  flex-direction: column;
 }
 .products__item:nth-child(2) {
   display: none;
@@ -535,6 +532,10 @@ body {
     flex-direction: column;
   }
 }
+.products__item:hover .products__description, .products__item:focus .products__description {
+  opacity: 1;
+  transform: translateY(0);
+}
 .products__img {
   width: 343px;
   height: 300px;
@@ -553,11 +554,40 @@ body {
     height: 300px;
   }
 }
+.products__description {
+  color: #0A224A;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+  padding: 63px 24px;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: -1;
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(101%);
+  width: 343px;
+  height: 300px;
+}
+@media screen and (min-width: 752px) {
+  .products__description {
+    width: 344px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .products__description {
+    width: 312px;
+    height: 300px;
+  }
+}
+.products__description__description:hover .products__description__description:focus {
+  opacity: 1;
+}
 .products__text {
   color: #0A224A;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
@@ -579,7 +609,7 @@ body {
   }
 }
 .best__title {
-  color: #0a224a;
+  color: #0A224A;
   font-family: "Roboto";
   font-size: 28px;
   font-style: normal;
@@ -611,9 +641,20 @@ body {
 }
 @media screen and (min-width: 1344px) {
   .best__list {
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 570px;
   }
+}
+.best__item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.best__item:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .best__item:first-child {
   display: none;
@@ -641,8 +682,7 @@ body {
 }
 @media screen and (min-width: 1344px) {
   .best__item:last-child .best__img {
-    margin-right: 24px;
-    width: 536px;
+    width: 550px;
     height: 489px;
   }
 }
@@ -651,6 +691,7 @@ body {
     display: flex;
     align-self: start;
     flex-direction: column;
+    order: -1;
   }
 }
 .best__img {
@@ -666,15 +707,12 @@ body {
 }
 @media screen and (min-width: 1344px) {
   .best__img {
-    width: 258px;
     height: 193px;
   }
 }
 .best__name {
-  color: #0a224a;
-  font-family: "Roboto";
+  color: #0A224A;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 10px;
@@ -686,10 +724,8 @@ body {
   }
 }
 .best__price {
-  color: #0a224a;
-  font-family: "Roboto";
+  color: #0A224A;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
