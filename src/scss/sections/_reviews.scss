@@ -1,118 +1,123 @@
-.reviews{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    background-color: $reviews-bcg-color;
-    @media screen and  (min-width:1344px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+.reviews {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: $reviews-bcg-color;
+  @media screen and (min-width: 1344px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    color: $title-color;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @media screen and (min-width: 752px) {
+      font-size: 32px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+    @media screen and (min-width: 752px) {
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+    background-color: $reviews-item-bcg;
+    padding: 24px 23px 24px 24px;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 300ms;
+
+    &:hover {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12),
+        0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
     }
 
-    &__title{
-        color: $title-color;
-font-family: Roboto;
-text-align: center;
-font-size: 28px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.50; /* 150% */
-text-transform: uppercase;
-margin-bottom: 30px;
-@media screen and  (min-width:752px) {
-        font-size: 32px;
+    &:nth-child(2) {
+      display: none;
     }
+    &:nth-child(3) {
+      display: none;
     }
+    @media screen and (min-width: 752px) {
+      padding: 29px 24px 24px 24px;
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+    @media screen and (min-width: 1344px) {
+      padding: 37px 32px 32px 32px;
+      &:nth-child(3) {
+        display: block;
+      }
+    }
+  }
 
-    &__list{
-        display: flex;
-        gap: 16px;
-        @media screen and  (min-width:752px) {
-        gap: 24px;
-    }
-    }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
 
-    &__item{
-        border-radius: 8px;
-        background-color: $reviews-item-bcg;
-        padding: 24px 23px 24px 24px;
-        &:nth-child(2){
-            display: none;
-        }
-        &:nth-child(3){
-            display: none;
-        }
-        @media screen and  (min-width:752px) {
-            padding: 29px 24px 24px 24px;
-        &:nth-child(2){
-            display: block;
-        }
+  &__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12),
+        0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+    @media screen and (min-width: 752px) {
+      width: 56px;
+      height: 56px;
     }
-    @media screen and  (min-width:1344px) {
-        padding: 37px 32px 32px 32px;
-        &:nth-child(3){
-            display: block;
-        }
-    }
-    }
+  }
 
-    &__box{
-        display: flex;
-        align-items: center;
-    }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+  }
 
-    &__image{
-        width: 48px;
-height: 48px;
-@media screen and  (min-width:752px) {
-        width: 56px;
-height: 56px;
+  &__heading {
+    color: $title-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.77;
+    text-transform: uppercase;
+    @media screen and (min-width: 752px) {
+      font-size: 20px;
+      line-height: 2.25;
     }
-    }
+  }
 
-    &__wrap{
-        display: flex;
-        flex-direction: column;
-        margin-left: 14px;
+  &__sub {
+    color: $reviews-sub-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    @media screen and (min-width: 752px) {
+      font-size: 16px;
+      line-height: 1.5;
     }
+  }
 
-    &__heading{
-        color: $title-color;
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 1.77; /* 177.778% */
-text-transform: uppercase;
-@media screen and  (min-width:752px) {
-        font-size: 20px;
-        line-height: 2.25; 
+  &__text {
+    color: $text-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42;
+    margin-top: 24px;
+    @media screen and (min-width: 752px) {
+      font-size: 18px;
+      line-height: 1.5;
     }
-    }
-
-    &__sub{
-        color: $reviews-sub-color;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.28; /* 128.571% */
-@media screen and  (min-width:752px) {
-        font-size: 16px;
-        line-height: 1.50;
-    }
-    }
-
-    &__text{
-        color: $text-color;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.42; /* 142.857% */
-margin-top: 24px;
-@media screen and  (min-width:752px) {
-        font-size: 18px;
-        line-height: 1.50;
-    }
-    }
-
+  }
 }
