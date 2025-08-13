@@ -1,5 +1,4 @@
 .mobile {
-
     position: absolute;
     top: 0;
     left: 0;
@@ -13,6 +12,12 @@
     padding: 48px 0 48px 40px;
     font-family: "Roboto";
     color: $text-color;
+    display: flex;
+    width: 768px;
+    padding-bottom: 451px;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
 
     &__close {
       width: 40px;
@@ -26,15 +31,6 @@
       border: none;
       background-color: transparent;
     }
-
-    // display: flex;
-    // width: 375px;
-    // padding-bottom: 365px;
-    // flex-direction: column;
-    // align-items: center;
-    // gap: 114px;
-
-
 
     &__item {
         font-size: 16px;

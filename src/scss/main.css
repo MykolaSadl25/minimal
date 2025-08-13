@@ -1108,6 +1108,12 @@ body {
   padding: 48px 0 48px 40px;
   font-family: "Roboto";
   color: #0A224A;
+  display: flex;
+  width: 768px;
+  padding-bottom: 451px;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
 }
 .mobile__close {
   width: 40px;
