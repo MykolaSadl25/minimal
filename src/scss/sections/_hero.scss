@@ -6,22 +6,18 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media screen and (min-width: 752px) {
+    background-image: none;
+  }
 
+  @media screen and (min-width: 1344px) {
+    background-image: none;
+  }
 
-    @media screen and (min-width: 752px) {
-      background-image: none;
-    }
-
-    @media screen and (min-width: 1344px) {
-      background-image: none;
-    }
-  
-
-  &>.container {
+  & > .container {
     // @media screen and (min-width:367px) {
     //   background-image: none;
     // }
-
 
     @media screen and (min-width: 752px) {
       background-image: url(../img/tablet/hero-tablet1@1x.webp),
@@ -31,8 +27,8 @@
       background-repeat: no-repeat, no-repeat;
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url(../img/tablet/hero-tablet1@2x.webp),
           url(../img/tablet/hero-tablet2@2x.webp);
         background-repeat: no-repeat, no-repeat;
@@ -48,8 +44,8 @@
       background-repeat: no-repeat, no-repeat, no-repeat;
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url(../img/desktop/hero-desktop1@2x.webp),
           url(../img/desktop/hero-desktop2@2x.webp),
           url(../img/desktop/hero-desktop3@2x.webp);
@@ -59,10 +55,9 @@
   }
 
   &__title {
-    color: #0a224a;
+    color: $footer-bcg-color;
     font-family: 'Playfair Display';
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
     line-height: 42px;
     text-transform: uppercase;
@@ -83,10 +78,8 @@
   }
 
   &__text {
-    color: #0a224a;
-    font-family: 'Roboto';
+    color: $footer-bcg-color;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 28px;
@@ -106,12 +99,10 @@
 
   &__btn {
     color: #fff;
-    font-family: 'Roboto';
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    background-color: #0a224a;
+    background-color: $footer-bcg-color;
     border: none;
     padding-top: 12px;
     padding-bottom: 12px;
