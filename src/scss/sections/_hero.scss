@@ -6,10 +6,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../img/mobile/hero-mobile@2x.webp);
+
 
     @media screen and (min-width: 752px) {
       background-image: none;
@@ -18,12 +15,12 @@
     @media screen and (min-width: 1344px) {
       background-image: none;
     }
-  }
+  
 
   &>.container {
-    @media screen and (min-width:367px) {
-      background-image: none;
-    }
+    // @media screen and (min-width:367px) {
+    //   background-image: none;
+    // }
 
 
     @media screen and (min-width: 752px) {
