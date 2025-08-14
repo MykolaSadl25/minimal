@@ -321,8 +321,8 @@
     transition-duration: 300ms;
     &:hover{
         background-color: $footer-icon-bcg;
-        fill: $footer-icon-hover;
-    }
+          fill: $footer-icon-hover;
+        }
     @media screen and (min-width: 752px) {
       width: 40px;
       height: 40px;
@@ -369,7 +369,7 @@
     color: $footer-copywright-color;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 1.188px;
     text-decoration-line: underline;
     text-decoration-style: solid;
