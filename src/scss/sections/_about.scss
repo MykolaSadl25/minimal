@@ -88,6 +88,7 @@
     }
   }
 
+
   &__heading {
     color: $about-title-color;
     text-align: center;
@@ -114,6 +115,9 @@
   &__image {
     width: 375px;
     height: 400px;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 300ms;
     @media screen and (min-width: 752px) {
       width: 704px;
       height: 540px;
@@ -121,6 +125,11 @@
     @media screen and (min-width: 1344px) {
       width: 536px;
       height: 540px;
+    }
+
+    &:hover{
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12),
+        0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
     }
   }
 }

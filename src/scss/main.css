@@ -366,6 +366,9 @@ body {
 .about__image {
   width: 375px;
   height: 400px;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 300ms;
 }
 @media screen and (min-width: 752px) {
   .about__image {
@@ -378,6 +381,9 @@ body {
     width: 536px;
     height: 540px;
   }
+}
+.about__image:hover {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
 .prices {
@@ -766,7 +772,6 @@ body {
   }
 }
 .reviews__item {
-  border: 1px solid #E7E7E7;
   border-radius: 8px;
   background-color: #FFF;
   padding: 24px 23px 24px 24px;
@@ -1263,7 +1268,7 @@ body {
   color: #7A7A7A;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 1.188px;
   text-decoration-line: underline;
   text-decoration-style: solid;
