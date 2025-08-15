@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
     @media screen and (min-width: 1344px) {
       display: none;
     }
@@ -39,14 +40,14 @@
   &__menu {
     width: 40px;
     height: 40px;
-    fill: red;
+    fill: black;
     position: absolute;
   }
   &__list {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-left: 425px;
+    margin-left: 566px;
     margin-right: auto;
   }
   &__link {
