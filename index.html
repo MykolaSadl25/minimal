@@ -16,7 +16,7 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script type="module" crossorigin src="/minimal/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/minimal/assets/index-4177e037.css">
+    <link rel="stylesheet" href="/minimal/assets/index-94f2f0af.css">
   </head>
   <body>
 
@@ -373,7 +373,52 @@
   </div>
 </section>
 
-    
+    <section class="news">
+  <div class="container">
+    <div class="news__box">
+      <h2 class="news__title">Newsletter</h2>
+      <p class="news__text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <ul class="news__list">
+        <li class="news__item">
+          <label class="news__label">
+            <input required type="text" class="news__input" placeholder="Name" />
+          </label>
+        </li>
+        <li class="news__item">
+          <label class="news__label">
+            <input required type="email" class="news__input" placeholder="E-mail" />
+          </label>
+        </li>
+      </ul>
+
+      <div class="news__wrap">
+        <input type="checkbox" class="news__check" required/>
+        <p class="news__txt">Agree to subscribe to the newsletter</p>
+      </div>
+      <button type="submit" class="news__button">Send</button>
+    </div>
+    <div class="news__img">
+      <picture>
+        <source
+          srcset="/minimal/assets/news-sofa-c2fd4ec0.webp 1x, /minimal/assets/news-desktop@2x-8599c31c.webp 2x"
+          media="(min-width: 1344px)"
+        />
+        <source
+          srcset="/minimal/assets/news-tablet@1x-dc20cfae.webp 1x, /minimal/assets/news-tablet@2x-0de93098.webp 2x"
+          media="(min-width: 727px)"
+        />
+        <source
+          srcset="/minimal/assets/news-mobile@1x-e44c67e7.webp 1x, /minimal/assets/news-mobile@2x-54de4765.webp 2x"
+          media="(min-width: 726px)"
+        />
+        <img src="/minimal/assets/news-sofa-c2fd4ec0.webp" alt="Sofa" />
+      </picture>
+    </div>
+  </div>
+</section>
+
     <footer data-aos="fade-up" class="footer">
   <div class="container">
     <section class="footer__info">
