@@ -1,0 +1,54 @@
+<section class="news">
+  <div class="container">
+    <div class="news__box">
+      <h2 class="news__title">Newsletter</h2>
+      <p class="news__text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <ul class="news__list">
+        <li class="news__item">
+          <label class="news__label">
+            <input required type="text" class="news__input" placeholder="Name" />
+          </label>
+        </li>
+        <li class="news__item">
+          <label class="news__label">
+            <input required type="email" class="news__input" placeholder="E-mail" />
+          </label>
+        </li>
+      </ul>
+
+      <div class="news__wrap">
+        <input type="checkbox" class="news__check" required/>
+        <p class="news__txt">Agree to subscribe to the newsletter</p>
+      </div>
+      <button type="submit" class="news__button">Send</button>
+    </div>
+    <div class="news__img">
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/news-desktop@1x.webp 1x,
+            ./img/desktop/news-desktop@2x.webp 2x
+          "
+          media="(min-width: 1344px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/news-tablet@1x.webp 1x,
+            ./img/tablet/news-tablet@2x.webp 2x
+          "
+          media="(min-width: 727px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/news-mobile@1x.webp 1x,
+            ./img/mobile/news-mobile@2x.webp 2x
+          "
+          media="(min-width: 726px)"
+        />
+        <img src="./img/tablet/news-sofa.webp" alt="Sofa" />
+      </picture>
+    </div>
+  </div>
+</section>
