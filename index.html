@@ -16,7 +16,7 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script type="module" crossorigin src="/minimal/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/minimal/assets/index-94f2f0af.css">
+    <link rel="stylesheet" href="/minimal/assets/index-adca698d.css">
   </head>
   <body>
 
@@ -584,11 +584,19 @@
 
     
     <div class="mobile is-hidden" data-mobile>
-    <button type="button" class="mobile__close" data-mobile-close>
+  <div class="mobile__top">
+    <button class="mobile__btn">
       <svg class="mobile__icon">
-        <use href="/src/img/symbol-defs.svg#icon-cross"></use>
+        <use href="/minimal/assets/symbol-defs-551abb71.svg#icon-logo"></use>
       </svg>
     </button>
+      <button type="button" class="mobile__close" data-mobile-close>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M24 8L8 24" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 8L24 24" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </button>
+  </div>
     <ul class="mobile__list">
         <li class="mobile__item"><a href="" class="mobile__link">About us</a></li>
         <li class="mobile__item"><a href="" class="mobile__link">Our products</a></li>
