@@ -1,9 +1,17 @@
 <div class="mobile is-hidden" data-mobile>
-    <button type="button" class="mobile__close" data-mobile-close>
-      <svg class="mobile__icon">
-        <use href="/src/img/symbol-defs.svg#icon-cross"></use>
-      </svg>
-    </button>
+    <div class="mobile__top">
+        <button class="mobile__btn">
+            <svg class="mobile__icon">
+              <use href="./img/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </button>
+          <button type="button" class="mobile__close" data-mobile-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M30 10L10 30" stroke="#0A224A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 10L30 30" stroke="#0A224A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </button>
+    </div>
     <ul class="mobile__list">
         <li class="mobile__item"><a href="" class="mobile__link">About us</a></li>
         <li class="mobile__item"><a href="" class="mobile__link">Our products</a></li>
