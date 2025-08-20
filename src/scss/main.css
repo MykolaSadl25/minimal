@@ -542,6 +542,7 @@ body {
   width: 343px;
   height: 300px;
   margin-bottom: 16px;
+  position: absolute;
 }
 @media screen and (min-width: 752px) {
   .products__img {
@@ -556,12 +557,30 @@ body {
     height: 300px;
   }
 }
+.products__img:nth-child(3) {
+  display: none;
+}
+@media screen and (min-width: 1344px) {
+  .products__img:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.products__img:last-child {
+  display: none;
+}
+@media screen and (min-width: 1344px) {
+  .products__img:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .products__description {
   color: #0A224A;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  position: absolute;
+  position: relative;
   padding: 63px 24px;
   background-color: rgba(255, 255, 255, 0.9);
   opacity: -1;
@@ -586,6 +605,9 @@ body {
 }
 .products__description__description:hover .products__description__description:focus {
   opacity: 1;
+}
+.products__div {
+  overflow: hidden;
 }
 .products__text {
   color: #0A224A;
@@ -1464,38 +1486,44 @@ body {
   opacity: 1;
   z-index: 1;
   background: #fff;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
-  padding: 48px 0 48px 40px;
-  font-family: "Roboto";
   color: #0A224A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+}
+.mobile__top {
+  display: flex;
+  height: 95px;
+  width: 100%;
+  padding: 0 32px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F7FAFF;
+  text-decoration: none;
+}
+@media screen and (max-width: 726px) {
+  .mobile__top {
+    padding: 0 16px;
+    height: 88px;
+  }
+}
+.mobile__btn {
+  background-color: transparent;
+  border: none;
+}
+.mobile__icon {
+  width: 127px;
+  height: 16px;
 }
 .mobile__close {
   width: 40px;
   height: 40px;
-  position: absolute;
-  top: 10px;
-  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   background-color: transparent;
-}
-.mobile__item {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-}
-.mobile__menu {
-  width: 32px;
-  height: 32px;
-}
-.mobile__close {
-  width: 32px;
-  height: 32px;
 }
 .mobile__list {
   display: flex;
@@ -1503,7 +1531,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 17px;
+  gap: 30px;
+}
+.mobile__link {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  color: #0A224A;
 }
 
 .is-hidden {
