@@ -212,7 +212,7 @@ body {
   font-family: "Playfair Display";
   font-size: 28px;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 14px;
   margin-right: 65px;
@@ -221,7 +221,7 @@ body {
   .hero__title {
     font-size: 50px;
     margin-right: 59px;
-    line-height: 75px;
+    line-height: 1.5;
     margin-bottom: 410px;
     width: 648px;
   }
@@ -235,14 +235,14 @@ body {
   color: #0A224A;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   margin-bottom: 28px;
   margin-right: 16px;
 }
 @media screen and (min-width: 752px) {
   .hero__text {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
     margin-bottom: 30px;
     width: 310px;
   }
@@ -256,7 +256,7 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   background-color: #0A224A;
   border: none;
   padding-top: 12px;
@@ -269,6 +269,7 @@ body {
     font-size: 18px;
     padding-top: 17px;
     padding-bottom: 17px;
+    line-height: 1.5;
   }
 }
 @media screen and (min-width: 1344px) {
@@ -584,17 +585,11 @@ body {
     height: 300px;
   }
 }
-.products__img:nth-child(3) {
-  display: none;
-}
 @media screen and (min-width: 1344px) {
   .products__img:nth-child(3) {
     display: flex;
     flex-direction: column;
   }
-}
-.products__img:last-child {
-  display: none;
 }
 @media screen and (min-width: 1344px) {
   .products__img:last-child {
@@ -661,11 +656,9 @@ body {
 }
 .best__title {
   color: #0A224A;
-  font-family: "Roboto";
   font-size: 28px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 21px;
   display: flex;
@@ -674,7 +667,7 @@ body {
 @media screen and (min-width: 752px) {
   .best__title {
     font-size: 32px;
-    line-height: 45px;
+    line-height: 1.4;
   }
 }
 .best__list {
@@ -765,25 +758,25 @@ body {
   color: #0A224A;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 752px) {
   .best__name {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5px;
   }
 }
 .best__price {
   color: #0A224A;
   font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5;
 }
 @media screen and (min-width: 752px) {
   .best__price {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
   }
 }
 
