@@ -9,11 +9,9 @@
 
   &__title {
     color: $footer-bcg-color;
-    font-family: 'Roboto';
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 1.5;
     text-transform: uppercase;
     margin-bottom: 21px;
     display: flex;
@@ -21,7 +19,7 @@
 
     @media screen and (min-width: 752px) {
       font-size: 32px;
-      line-height: 45px;
+      line-height: 1.4;
     }
   }
 
@@ -38,32 +36,26 @@
     }
 
     @media screen and (min-width: 1344px) {
-      // flex-direction: column-reverse;
-      // // gap: 20px;
-      // justify-content: center;
-      // // align-items: center;
-      // flex-wrap: wrap-reverse;
-      // display: grid;
-      //     grid-template-columns: repeat(2, 0.2fr);
-          gap: 25px;
-    //   flex-direction: row-reverse;
-    //   flex-wrap: nowrap;
+      gap: 25px;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 570px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 570px;
     }
   }
-&__item{
+
+  &__item {
     transition-property: box-shadow;
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
-            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
-                0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-        }
-}
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    }
+  }
+
   &__item:first-child {
     display: none;
 
@@ -93,6 +85,7 @@
       height: 489px;
     }
   }
+
   &__item:last-child {
     @media screen and (min-width: 1344px) {
       display: flex;
@@ -113,7 +106,6 @@
     }
 
     @media screen and (min-width: 1344px) {
-    //   width: 258px;
       height: 193px;
     }
   }
@@ -122,12 +114,12 @@
     color: $footer-bcg-color;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     margin-bottom: 10px;
 
     @media screen and (min-width: 752px) {
       font-size: 18px;
-      line-height: 27px;
+      line-height: 1.5px;
     }
   }
 
@@ -135,11 +127,11 @@
     color: $footer-bcg-color;
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5;
 
     @media screen and (min-width: 752px) {
       font-size: 18px;
-      line-height: 27px;
+      line-height: 1.5;
     }
   }
 }
